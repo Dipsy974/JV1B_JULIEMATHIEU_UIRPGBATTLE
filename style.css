@@ -1,0 +1,145 @@
+body{
+    margin : 0;
+    height : 100vh;
+    font-family: 'MedievalSharp', cursive;
+    font-size : 20px; 
+    color : white; 
+}
+
+#screen{
+    height : 100%; 
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background : url(img/background.png) no-repeat;
+    background-size: cover;
+}
+
+
+#dialoguebox{
+    height : 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialoguebox p{
+    width : 40%;
+    text-align: center;
+    border : black 2px solid; 
+    background-color: rgba(76, 76, 206, 0.555);
+
+    padding : 10px 0; 
+}
+
+#battlefield{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#enemiesfield{
+    display : flex;
+}
+
+#backlane{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#frontlane{
+    display : flex;
+    align-items: center;
+}
+
+img{
+    transform: scaleX(-1);
+}
+
+#battleinfo{
+    display : flex;
+    justify-content: center; 
+}
+
+#charactersinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width : 20%; 
+    border : black 2px solid; 
+    background-color: rgba(76, 76, 206, 0.555);
+    border-radius: 30px;
+    padding : 5px 0;
+}
+
+#actions{
+    display: flex; 
+    flex-direction: column;
+    width : 8%; 
+    align-items: center;
+    border : black 2px solid; 
+    background-color: rgba(76, 76, 206, 0.555);
+    border-radius: 30px;
+    padding : 5px 0; 
+    margin-right : 20px; 
+}
+
+#actions p{
+    margin-left: 5px;
+}
+
+.action{
+    display: flex;
+}
+
+.action span{
+    margin : 1em 0; 
+}
+
+.characterinfo{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tooltip{
+    position: relative;
+}
+.tooltiparrow{
+    visibility: hidden;
+}
+
+.tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover{
+    cursor: pointer;
+}
+
+.tooltip:hover .tooltiparrow {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+

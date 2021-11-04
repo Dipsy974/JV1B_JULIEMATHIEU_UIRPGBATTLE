@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="screen">
+
+        <!-- Fenêtre de dialogues et informations -->
+        <div id="dialoguebox">
+            <p>Big guy utilise Gros Coup de Poing !</p>
+        </div>
+
+        <div id="battlefield">
+            <!-- Camp des ennemis sur champ de bataille -->
+            <div id="enemiesfield">
+                <div id="backlane">
+                    <div id="enemy1" class="enemies tooltip">
+                        <img src="img/enemy1.png" alt="Enemy 1">
+                        <span class="enemyinfo tooltiptext">Fishman : 26/50HP</span>
+                    </div>
+                    <div id="enemy2" class="enemies tooltip">
+                        <img src="img/enemy2.png" alt="Enemy 2">
+                        <span class="enemyinfo tooltiptext">Mean Whale : 65/70HP</span>
+                    </div>
+                </div>
+                <div id="frontlane">
+                    <div id="enemy3" class="enemies tooltip">
+                        <img src="img/enemy3.png" alt="Enemy 3">
+                        <span class="enemyinfo tooltiptext">Bombe : 9/10HP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camp des alliés sur champ de bataille -->
+            <div id="heroesfield">
+                <div id="hero1" class="heroes tooltip">
+                    <img src="img/character1.png" alt="Hero 1">
+                    <span class="charainfo tooltiptext">Bomb Guy : 26/50HP Empoisonné</span>
+                </div>
+                <div id="hero2" class="heroes tooltip">
+                    <img src="img/character2.png" alt="Hero 2">
+                    <span class="charainfo tooltiptext">Wood Leg : 38/60HP Paralisé</span>
+                </div>
+                <div id="hero3" class="heroes tooltip">
+                    <img src="img/character3.png" alt="Hero 3">
+                    <span class="charainfo tooltiptext">Big Guy : 70/80HP Brulé</span>
+                </div>
+                <div id="hero4" class="heroes tooltip">
+                    <img src="img/character4.png" alt="Hero 4">
+                    <span class="charainfo tooltiptext">One hand : 0/40HP Mort</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="battleinfo">
+            <!-- Fenêtre des actions -->
+            <div id="actions">
+                <div id="action1" class="action tooltip">
+                    <span class="tooltiparrow">▶</span>
+                    <p>Attaque</p>
+                </div>
+                <div id="action2" class="action tooltip">
+                    <span class="tooltiparrow">▶</span>
+                    <p>Magie</p>
+                </div>
+                <div id="action3" class="action tooltip">
+                    <span class="tooltiparrow">▶</span>
+                    <p>Item</p>
+                </div>
+                <div id="action4" class="action tooltip">
+                    <span class="tooltiparrow">▶</span>
+                    <p>Défense</p>
+                </div>  
+            </div>
+
+            <!-- Fenêtre des informations personnages-->
+            <div id="charactersinfo">
+                <div id="characterinfo1" class="characterinfo">
+                    <p id="charactername1">Bomb Guy</p>
+                    <span><img src="https://img.icons8.com/windows/32/000000/poison-bottle.png"/></span>
+                    <p id="characterhp1">26 / 50</p>
+                    <p id="charactermp1">20 / 20</p>
+                </div>
+                <div id="characterinfo2" class="characterinfo">
+                    <p id="charactername2">Wood Leg</p>
+                    <span><img src="https://img.icons8.com/ios-glyphs/30/000000/lightning-bolt--v1.png"/></span>
+                    <p id="characterhp2">38/60</p>
+                    <p id="charactermp2">5 / 15</p>
+                </div>
+                <div id="characterinfo3" class="characterinfo">
+                    <p id="charactername3">Big Guy</p>
+                    <span><img src="https://img.icons8.com/ios-glyphs/30/000000/fire-element--v1.png"/></span>
+                    <p id="characterhp3">70 / 80</p>
+                    <p id="charactermp3">10 / 10</p> 
+                </div>
+                <div id="characterinfo4" class="characterinfo">
+                    <p id="charactername4">One Hand</p>
+                    <span><img src="https://img.icons8.com/material-sharp/24/000000/skull.png"/></span>
+                    <p id="characterhp4">0 / 40</p>
+                    <p id="charactermp4">0 / 25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
